@@ -16,6 +16,7 @@
         height: 120vw !important;
         flex-direction: column !important;
         margin: 0 !important;
+        margin-bottom: 10vw !important;
         padding: 7vw 0vw !important;
     }
 
@@ -63,6 +64,7 @@
         height: 70vw !important;
         flex-direction: column !important;
         margin: 0 !important;
+        margin-bottom: 10vw !important;
     }
 
     .AboutUs h2 {
@@ -276,14 +278,6 @@ header {
     z-index: 0;
     box-shadow: 0 0 5px black;
     filter: saturate(2);
-}
-
-.scrollBtn {
-    position: relative;
-    left: 48%;
-    bottom: 18%;
-    z-index: 999;
-    filter: invert();
 }
 
 .AboutUs {
