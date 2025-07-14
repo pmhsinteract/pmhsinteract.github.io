@@ -8,14 +8,14 @@
   }
 
   .hero h1 {
-    font-size: 7vh !important;  
-    width: 10% !important;
+    font-size: 5vh !important;  
   }
 
   .AboutUs {
     width: 100vw !important;
     height: 110vw !important;
     flex-direction: column !important;
+    margin: 0 !important;
   }
 
   .AboutUs h2 {
@@ -36,6 +36,10 @@
     width: 92% !important;
     padding: 0 !important;
     margin-left: 3vw !important;
+  }
+
+  #heroBg {
+    height: 90vh !important;
   }
 
   
@@ -59,7 +63,7 @@ body, html {
 
 @media (min-aspect-ratio: 16/9) {
     #heroBg {
-        width: 100%;
+        width: 100vw;
         height: auto;
     }
 }
@@ -71,7 +75,7 @@ body, html {
     }
 }
 
-img:hover {
+#interactLogo:hover {
     transform: scale(1.15);
     transition: ease .2s;
 }
@@ -188,9 +192,9 @@ header {
 .hero {
     display: flex; 
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     position: relative;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
@@ -200,11 +204,14 @@ header {
 }
 
 .hero h1 {
-    margin-left: 10%;
     color:white;
     font-size: 10vh;
     z-index: 1;
-    text-align: left;
+    text-align: center;
+    border: solid 5px white;
+    padding: 2vh 4vw;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 15px white;
 }
 #heroBg {
     position: absolute;
@@ -230,6 +237,7 @@ header {
     align-items: center;
     height: 60vh;
     box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-top: 10vh;
 }
 
 .AboutUs h2 {
