@@ -1,4 +1,4 @@
-@media (max-device-width: 500px) and (orientation: portrait) {
+@media (max-width: 500px) and (orientation: portrait) {
   .NavBar {
     display: none !important;
   }
@@ -30,7 +30,7 @@
 
 }
 
-@media (max-device-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
   .NavBar {
     display: none !important;
   }

@@ -1,4 +1,4 @@
-@media (max-device-width: 500px) and (orientation: portrait) {
+@media (max-width: 500px) and (orientation: portrait) {
     body {
         overflow-y: hidden !important;
     }
@@ -45,7 +45,7 @@
     }
 }
 
-@media (max-device-width: 1000px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
   .NavBar {
     display: none !important;
   }
