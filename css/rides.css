@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .NavBar {
     display: none !important;
   }
@@ -8,8 +8,26 @@
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 4.5rem !important; 
+    margin-left: 10vw;
+    margin-right: 8vw;
   }
+
+  .rideOptionsContainer div img {
+    height: 12vh !important;
+  }
+
+  .rideOptionsContainer div {
+    padding: 4.5vh 24vw !important;
+  }
+
+  .rideOptionsContainer {
+    gap: 15vw !important;
+  }
+  h3 {
+    font-size: 1.5rem !important;
+  }
+
 }
 
 
@@ -141,6 +159,8 @@ img:hover {
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.273);
     backdrop-filter: blur(20px);
+    overflow-y: auto;
+    overflow-x: hidden;   
 }
 
 .hamMenu ul {

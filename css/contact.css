@@ -11,6 +11,10 @@ header {
     z-index: 999;
 }
 
+html, body {
+    overflow: hidden;
+}
+
 main {
     display: flex;
     width: 100vw;
@@ -29,7 +33,7 @@ main {
     margin-top: 12vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .NavBar {
     display: none !important;
   }
@@ -37,6 +41,36 @@ main {
   #ham-icon {
     display: block !important;
   }
+
+    input, textarea {
+        width: 80% !important;
+  }
+
+  button {
+    width: 50% !important;
+  }
+
+  .socials img {
+    height: 8vw !important;
+    margin-left: 2vw !important;
+    margin-right: 2vw !important;
+  }
+
+    .contact-container {
+        padding: 5vw !important;
+
+  }
+
+  .contact-container h1 {
+    margin-bottom: 0rem !important;
+  }
+
+  .contact-container p {
+    color: #000000;
+    margin-bottom: 2rem !important;
+    font-size: 1rem !important;
+}
+  
 }
 
 
@@ -68,6 +102,8 @@ img:hover {
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.273);
     backdrop-filter: blur(20px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .hamMenu ul {
@@ -164,6 +200,7 @@ body {
     text-align: center;
     padding: 50px 40px;
     margin-left: 4vw;
+    box-shadow: 0 0 25px rgb(255, 162, 0);
 }
 
 .contact-container h1 {

@@ -19,14 +19,12 @@ hamIcon.addEventListener("click", function() {
     hamMenu.style.transform = "translateX(-350px)";
     hamMenu.style.transition = "ease .7s";
     document.body.style.overflow = "hidden"; // Disable background scroll
-    document.querySelector(".scrollBtn").style.display = "none";
     hamToggle = true;
   } else {
     hamMenu.style.transform = "translateX(350px)";
     hamMenu.style.transition = "ease .7s";
     hamIcon.src = "../images/hammenu.png";
     document.body.style.overflow = ""; // Re-enable background scroll
-    document.querySelector(".scrollBtn").style.display = "relative";
     hamToggle = false;
   }
 });

@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .NavBar {
     display: none !important;
   }
@@ -6,6 +6,39 @@
   #ham-icon {
     display: block !important;
   }
+
+  .hero h1 {
+    font-size: 7vh !important;  
+    width: 10% !important;
+  }
+
+  .AboutUs {
+    width: 100vw !important;
+    height: 110vw !important;
+    flex-direction: column !important;
+  }
+
+  .AboutUs h2 {
+    font-size: 2rem !important;
+  }
+
+  .AboutUs p {
+    font-size: .8rem !important;
+    text-indent: 2rem !important;
+  }
+
+  #abImg {
+    margin-top: 3vw !important;
+    height: 30vw !important;
+  }
+
+  .abTextContainer {
+    width: 92% !important;
+    padding: 0 !important;
+    margin-left: 3vw !important;
+  }
+
+  
 }
 
 
@@ -73,6 +106,8 @@ header {
     width: 350px;
     height: 100%;
     z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: rgb(21, 0, 83);
 }
 
@@ -173,7 +208,7 @@ header {
 }
 #heroBg {
     position: absolute;
-    top: -5%;
+    top: 0;
     left: 0;
     margin: 0;
     padding: 0;
@@ -205,6 +240,7 @@ header {
 #abImg {
     border: solid white 3px;
     border-radius: 2rem;
+    display: flex;
 }
 
 .abTextContainer {
@@ -213,7 +249,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 40%;
-    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .abTextContainer h2 {

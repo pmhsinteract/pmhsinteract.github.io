@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .NavBar {
     display: none !important;
   }
@@ -6,6 +6,11 @@
   #ham-icon {
     display: block !important;
   }
+
+  h1 {
+    font-size: 3rem !important;
+    margin: 10vw !important;
+  };
 }
 
 
@@ -13,7 +18,8 @@ body {
     font-family: 'Montserrat', Arial, sans-serif;
     width: 100%;
     background-color: rgb(28, 0, 112);
-    margin: 2rem auto;
+    margin: 2rem auto; 
+    overflow: hidden;
 }
 
 main {
@@ -92,6 +98,8 @@ img:hover {
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.273);
     backdrop-filter: blur(20px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .hamMenu ul {
