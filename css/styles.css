@@ -1,52 +1,102 @@
-@media (max-width: 500px) or (orientation: landscape) {
-  .NavBar {
-    display: none !important;
-  }
+@media (max-device-width: 500px) and (orientation: portrait) {
+    .NavBar {
+        display: none !important;
+    }
 
-  #ham-icon {
-    display: block !important;
-  }
+    #ham-icon {
+        display: block !important;
+    }
 
-  .hero h1 {
-    font-size: 5vh !important;  
-  }
+    .hero h1 {
+        font-size: 5vh !important;
+    }
 
-  .AboutUs {
-    width: 100vw !important;
-    height: 110vw !important;
-    flex-direction: column !important;
-    margin: 0 !important;
-  }
+    .AboutUs {
+        width: 100vw !important;
+        height: 120vw !important;
+        flex-direction: column !important;
+        margin: 0 !important;
+        padding: 7vw 0vw !important;
+    }
 
-  .AboutUs h2 {
-    font-size: 2rem !important;
-  }
+    .AboutUs h2 {
+        font-size: 2rem !important;
+    }
 
-  .AboutUs p {
-    font-size: .8rem !important;
-    text-indent: 2rem !important;
-  }
+    .AboutUs p {
+        font-size: 1rem !important;
+        text-indent: 2rem !important;
+    }
 
-  #abImg {
-    margin-top: 3vw !important;
-    height: 30vw !important;
-  }
+    #abImg {
+        margin-top: 3vw !important;
+        height: 30vw !important;
+    }
 
-  .abTextContainer {
-    width: 92% !important;
-    padding: 0 !important;
-    margin-left: 3vw !important;
-  }
+    .abTextContainer {
+        width: 92% !important;
+        padding: 0 !important;
+        margin-left: 3vw !important;
+    }
 
-  #heroBg {
-    height: 90vh !important;
-  }
+    #heroBg {
+        height: 90vh !important;
+    }
 
-  
+
+}
+
+@media (max-device-width: 1000px) and (orientation: landscape) {
+    .NavBar {
+        display: none !important;
+    }
+    #ham-icon {
+        display: block !important;
+    }
+
+    .hero h1 {
+        font-size: 5vh !important;
+    }
+
+    .AboutUs {
+        width: 100vw !important;
+        height: 70vw !important;
+        flex-direction: column !important;
+        margin: 0 !important;
+    }
+
+    .AboutUs h2 {
+        font-size: 2rem !important;
+    }
+
+    .AboutUs p {
+        font-size: 1rem !important;
+        text-indent: 2rem !important;
+    }
+
+    #abImg {
+        margin-top: 3vw !important;
+        height: 30vw !important;
+    }
+
+    .abTextContainer {
+        width: 92% !important;
+        padding: 0 !important;
+        margin-left: 3vw !important;
+    }
+
+    #heroBg {
+        height: 90vh !important;
+    }
+
+
 }
 
 
-body, html {
+
+
+body,
+html {
     background-color: rgb(255, 136, 0);
     height: 100vh;
     width: 100vw;
@@ -81,11 +131,11 @@ body, html {
 }
 
 header {
-    display:flex;
+    display: flex;
     position: absolute;
     top: 40px;
-    right:0;
-    left:0;
+    right: 0;
+    left: 0;
     align-items: center;
     justify-content: center;
     height: 70px;
@@ -109,7 +159,7 @@ header {
     right: -375px;
     width: 350px;
     height: 100%;
-    z-index: 999;
+    z-index: 998;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: rgb(21, 0, 83);
@@ -163,11 +213,13 @@ header {
     backdrop-filter: blur(50px);
     padding-right: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.58);
+    z-index: 900;
 }
 
 .NavBar li {
     list-style-type: none;
     border-radius: 50px;
+    z-index: 900;
 }
 
 .NavBar li a {
@@ -176,6 +228,7 @@ header {
     text-decoration: none;
     padding: 15px 40px;
     display: block;
+    z-index: 900;
 }
 
 .NavBar li:hover {
@@ -190,7 +243,7 @@ header {
 
 
 .hero {
-    display: flex; 
+    display: flex;
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -198,13 +251,13 @@ header {
     align-items: center;
     top: 0;
     left: 0;
-    right:0;
+    right: 0;
     margin: 0;
     padding: 0;
 }
 
 .hero h1 {
-    color:white;
+    color: white;
     font-size: 10vh;
     z-index: 1;
     text-align: center;
@@ -213,6 +266,7 @@ header {
     text-shadow: 0 0 10px rgb(255, 255, 255);
     box-shadow: 0 0 15px white;
 }
+
 #heroBg {
     position: absolute;
     top: 0;
@@ -221,9 +275,10 @@ header {
     padding: 0;
     z-index: 0;
     box-shadow: 0 0 5px black;
+    filter: saturate(2);
 }
 
-.scrollBtn {    
+.scrollBtn {
     position: relative;
     left: 48%;
     bottom: 18%;
@@ -242,7 +297,7 @@ header {
 
 .AboutUs h2 {
     font-size: 45px;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 #abImg {

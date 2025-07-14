@@ -1,4 +1,4 @@
-@media (max-width: 500px) or (orientation: landscape) {
+@media (max-device-width: 500px) and (orientation: portrait) {
   .NavBar {
     display: none !important;
   }
@@ -26,6 +26,44 @@
   }
   h3 {
     font-size: 1.5rem !important;
+  }
+
+}
+
+@media (max-device-width: 1000px) and (orientation: landscape) {
+  .NavBar {
+    display: none !important;
+  }
+
+  #ham-icon {
+    display: block !important;
+  }
+
+  h1 {
+    font-size: 4rem !important; 
+    margin-left: 10vw;
+    margin-right: 8vw;
+  }
+
+  .rideOptionsContainer div img {
+    height: 24vh !important;
+  }
+
+  .rideOptionsContainer div {
+    border-radius: 5vw !important;
+    padding: 5vh 8vw !important;
+  }
+
+  .rideOptionsContainer {
+    gap: 6vw !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+
+  button {
+    font-size: .7rem !important;
+    height: 3.2vw !important;
   }
 
 }

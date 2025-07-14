@@ -1,9 +1,109 @@
+@media (max-device-width: 500px) and (orientation: portrait) {
+    .NavBar {
+        display: none !important;
+    }
+
+    #ham-icon {
+        display: block !important;
+    }
+
+    input,
+    textarea {
+        width: 80% !important;
+        font-size: .8rem !important;
+    }
+
+    button {
+        width: 65% !important;
+        font-size: .9rem !important;
+    }
+
+    .socials img {
+        height: 8vw !important;
+        margin-left: 2vw !important;
+        margin-right: 2vw !important;
+    }
+
+    main {
+        margin-left: 7vw !important;
+        margin-bottom: 3vw !important;
+        margin-top: 3vw !important;
+    }
+    .contact-container {
+        padding: 4vw 4vw !important;
+
+    }
+
+    .contact-container h1 {
+        margin-bottom: 0rem !important;
+        font-size: 2rem !important;
+    }
+
+    .contact-container p {
+        color: #000000;
+        margin-bottom: 2rem !important;
+        font-size: .9rem !important;
+    }
+
+}
+
+
+@media (max-device-width: 1000px) and (orientation: landscape) {
+    .NavBar {
+        display: none !important;
+    }
+
+    #ham-icon {
+        display: block !important;
+    }
+
+    main {
+        margin: 12vw 3vw !important;
+    }
+
+    input,
+    textarea {
+        width: 80% !important;
+    }
+
+    button {
+        width: 50% !important;
+    }
+
+    .socials img {
+        height: 8vw !important;
+        margin-left: 2vw !important;
+        margin-right: 2vw !important;
+    }
+
+    .contact-container {
+        margin-top: 40vw;
+        padding: 3vw !important;
+    }
+
+    form {
+    }
+
+    .contact-container h1 {
+        margin-bottom: 0rem !important;
+    }
+
+    .contact-container p {
+        color: #000000;
+        margin-bottom: 2rem !important;
+        font-size: 1rem !important;
+    }
+
+}
+
+
+
 header {
-    display:flex;
+    display: flex;
     position: absolute;
     top: 40px;
-    right:0;
-    left:0;
+    right: 0;
+    left: 0;
     align-items: center;
     justify-content: center;
     height: 70px;
@@ -11,14 +111,10 @@ header {
     z-index: 999;
 }
 
-html, body {
-    overflow: hidden;
-}
-
 main {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
 }
@@ -31,46 +127,6 @@ main {
     margin-left: 1.5%;
     gap: 10px;
     margin-top: 12vh;
-}
-
-@media (max-width: 500px) or (orientation: landscape) {
-  .NavBar {
-    display: none !important;
-  }
-
-  #ham-icon {
-    display: block !important;
-  }
-
-    input, textarea {
-        width: 80% !important;
-  }
-
-  button {
-    width: 50% !important;
-  }
-
-  .socials img {
-    height: 8vw !important;
-    margin-left: 2vw !important;
-    margin-right: 2vw !important;
-  }
-
-    .contact-container {
-        padding: 5vw !important;
-
-  }
-
-  .contact-container h1 {
-    margin-bottom: 0rem !important;
-  }
-
-  .contact-container p {
-    color: #000000;
-    margin-bottom: 2rem !important;
-    font-size: 1rem !important;
-}
-  
 }
 
 
@@ -224,7 +280,8 @@ form {
     gap: 1.5rem;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 0.9rem 1rem;
     border: 2.5px solid rgba(255, 255, 255, 0.788);
     border-radius: 16px;
@@ -238,7 +295,8 @@ input, textarea {
 }
 
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #4400ffcc;
     box-shadow: 0 0 8px rgba(106, 42, 255, 0.709);
 }
@@ -257,6 +315,7 @@ button {
     text-align: center;
     width: 40%;
 }
+
 button:hover {
     box-shadow: 0 0 25px rgb(255, 60, 0);
 }
