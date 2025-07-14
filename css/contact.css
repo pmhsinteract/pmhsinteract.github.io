@@ -33,7 +33,7 @@ main {
     margin-top: 12vh;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) or (orientation: landscape) {
   .NavBar {
     display: none !important;
   }
