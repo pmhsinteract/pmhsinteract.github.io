@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+
+<body>
+
+    <div class="hamMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#AboutUsAnchor">About Us</a></li>
+            <li><a href="stats.html">Club Stats</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="rides.html">Rides</a></li>
+            <li><a href="photostream.html">Photostream</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <a href="index.html"><img src="images/interactclubtransparent.png" height="55px" id="interactLogo"></a>
+
+        <ul class="NavBar">
+            <li><a href="photostream.html">Photostream</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rides.html">Rides</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <img src="images/hammenu.png" id="ham-icon">
+
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>Fill out the form below and we'll get back to you soon.</p>
+            <form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.submit(); this.reset(); return false;">
+                <input type="hidden" name="access_key" value="3d3e8730-f090-4c61-96bf-924db8678d52" />
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.instagram.com/pmhs.interact?utm_source=ig_web_button_share_sheet&igsh=ejEzcXd0ZTFtZzd2" target="_blank"><img src="images/instagram.png" height="50vh" alt="@pmhs.interact"></a>
+            <a href="https://band.us/n/aca9b3EbyfPfA" target="_blank"><img src="images/band.png" height="50vh" alt="Band Communication App"></a>
+            <a href="https://perryschools.instructure.com/courses/128537" target="_blank"><img src="images/canvas.png" height="50vh" alt="PMHS Interact Club Canvas Page"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=271592@student.perryschools.org&su=Interact Club Inquiry&body=Dear Bryan Nguyen, " target="_blank"><img src="images/gmail.png" height="50vh" alt="Email to Bryan Nguyen"></a>
+        </div>
+    </main>
+
+
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

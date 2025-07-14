@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Club Member Statistics</title>
+    <link rel="stylesheet" href="css/stats.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="hamMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#AboutUsAnchor">About Us</a></li>
+            <li><a href="stats.html">Club Stats</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="rides.html">Rides</a></li>
+            <li><a href="photostream.html">Photostream</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <a href="index.html"><img src="images/interactclubtransparent.png" height="55px" id="interactLogo"></a>
+        <ul class="NavBar">
+            <li><a href="photostream.html">Photostream</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rides.html">Rides</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <img src="images/hammenu.png" id="ham-icon">
+
+    </header>
+
+
+
+
+    <div class="form">
+        <h2>IC Profile Stats</h2>
+        <input type="text" id="studentIdInput" placeholder="Enter your Student ID" />
+        <button onclick="searchStudent()">Search</button>
+    </div>
+
+    <div class="progress-container" id="loadingBarContainer" style="display:none;">
+        <div class="progress-bar" id="loadingBar"></div>
+    </div>
+
+    <div id="result">
+    </div>
+
+    <script src="scripts/stats.js"></script>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
