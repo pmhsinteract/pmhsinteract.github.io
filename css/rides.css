@@ -248,7 +248,6 @@ img:hover {
     padding: 7px 15px;
     border-radius: 50px;
     backdrop-filter: blur(50px);
-    padding-right: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.58);
 }
 

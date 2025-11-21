@@ -156,7 +156,7 @@ img:hover {
     width: 350px;
     height: 100%;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.273);
+    background-color: rgba(0, 0, 0, 0.855);
     backdrop-filter: blur(20px);
     overflow-y: auto;
     overflow-x: hidden;
@@ -204,7 +204,7 @@ img:hover {
     position: inherit;
     gap: 10px;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.471);
+    background-color: rgba(255, 255, 255, 0.471);
     padding: 7px 15px;
     border-radius: 50px;
     backdrop-filter: blur(30px);
@@ -235,27 +235,29 @@ img:hover {
 
 
 body {
-    background: rgb(28, 0, 112);
+    background-image: linear-gradient(150deg, rgb(255, 130, 46), rgb(255, 0, 68));
     font-family: 'Montserrat', Arial, sans-serif;
-    color: black;
+    color: #000000;
     margin: 0;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .contact-container {
     margin-top: 8vh;
-    background: rgb(255, 123, 15);
+    border: solid 4px white;
+    border-radius: 75px;
+    background-color: rgb(24, 0, 120);
     padding: 2.5rem 2rem;
     border-radius: 24px;
     max-width: 500px;
     width: 100%;
     text-align: center;
     padding: 50px 40px;
-    margin-left: 4vw;
-    box-shadow: 0 0 25px rgb(255, 162, 0);
+    box-shadow: 0 0 50px rgba(86, 57, 255, 0.596);
 }
 
 .contact-container h1 {
@@ -267,8 +269,8 @@ body {
 }
 
 .contact-container p {
-    color: #000000;
-    margin-bottom: 4rem;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
     font-size: 1.1rem;
 }
 
@@ -290,7 +292,7 @@ textarea {
     transition: border 0.2s;
     outline: none;
     width: 92%;
-    background-color: wheat;
+    background-color: rgb(255, 237, 213);
 }
 
 

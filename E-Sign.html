@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Event Sign-in-Out</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <title>Interact Rides</title>
-    <link rel="stylesheet" href="css/photostream.css">
+    <link rel="stylesheet" href="css/E-Sign.css">
+
 </head>
 
 <body>
@@ -27,6 +27,7 @@
 
     <header>
         <a href="index.html"><img src="images/interactclubtransparent.png" height="55px" id="interactLogo"></a>
+
         <ul class="NavBar">
             <li><a href="E-Sign.html">E-Sign</a></li>
             <li><a href="stats.html">Stats</a></li>
@@ -40,9 +41,20 @@
     </header>
 
     <main>
-        <h1>Apply to have your Own Page!</h1>
+        <div class="contact-container">
+            <h1>Event Tracker Form</h1>
+            <p>Sign-In at the start of the event and Sign-Out again when you leave.</p>
+            <form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.submit(); this.reset(); return false;">
+                <input type="hidden" name="access_key" value="3d3e8730-f090-4c61-96bf-924db8678d52" />
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="number" name="id" placeholder="Student ID" required>
+                <input type="date" name="date" placeholder="Date" required>
+                <input type="time" name="time" placeholder="Time" required>
+                <textarea name="message" rows="5" placeholder="Sign-In or Sign-Out? + any feedback / comments regarding the event?" required></textarea>
+                <button type="submit">E-Sign</button>
+            </form>
+        </div>
     </main>
-
 
 
     <script src="scripts/rides.js"></script>
