@@ -209,7 +209,7 @@ header {
     position: inherit;
     gap: 10px;
     justify-content: center;
-    background-color: rgba(255, 47, 0, 0.471);
+    background-color: rgba(255, 154, 107, 0.471);
     padding: 7px 15px;
     border-radius: 50px;
     backdrop-filter: blur(50px);

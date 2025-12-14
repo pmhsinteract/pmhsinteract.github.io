@@ -281,6 +281,30 @@ form {
     gap: 1.5rem;
 }
 
+.SignCheckBoxContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 135, 71);
+    text-shadow: 1px 3px rgba(106, 42, 255, 0.709);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.SignCheckBoxContainer input {
+    width: 8vw;
+}
+
+input[type="checkbox" i]  {
+    width: 1vw;
+    margin-right: 1vw;
+}
+
+.eSignCheckboxMargin {
+    width: 3vw;
+}
+
+
 input,
 textarea {
     padding: 0.9rem 1rem;

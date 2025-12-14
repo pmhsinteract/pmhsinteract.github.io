@@ -48,10 +48,15 @@
                 <input type="hidden" name="access_key" value="3d3e8730-f090-4c61-96bf-924db8678d52" />
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="number" name="id" placeholder="Student ID" required>
-                <input type="text" name="name" placeholder="Service Event Name" required>
+                <input type="text" name="event" placeholder="Service Event Name" required>
                 <input type="date" name="date" placeholder="Date" required>
                 <input type="time" name="time" placeholder="Time" required>
-                <textarea name="message" rows="5" placeholder="Sign-In or Sign-Out? + any feedback / comments regarding the event?" required></textarea>
+                <div class="SignCheckBoxContainer">
+                    <input type="checkbox" name="Sign-In" value="Sign-In" required> Sign-In
+                    <div class="eSignCheckboxMargin"></div> 
+                    <input type="checkbox" name="Sign-Out" value="Sign-Out" required> Sign-Out
+                </div> 
+                <textarea name="message" rows="5" placeholder="Any feedback / comments regarding the event?" required></textarea>
                 <button type="submit">E-Sign</button>
             </form>
         </div>
