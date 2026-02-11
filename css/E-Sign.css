@@ -113,7 +113,7 @@ header {
 
 main {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -129,10 +129,6 @@ main {
     margin-top: 12vh;
 }
 
-
-.socials img {
-    border-radius: 20px;
-}
 
 img:hover {
     transform: scale(1.15);
